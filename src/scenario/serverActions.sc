@@ -41,3 +41,15 @@ theme: /
         
         buttons:
             "Поставь будильник на 7:40"
+            
+    state: ВыбраноКафе
+        event!: cafe_chosen
+        event!: CAFE_CHOSEN
+
+        random: 
+            a: Океюшки!
+            a: Заебись!
+            a: Понял, братишка!
+        
+        buttons:
+            "Хочу чебуречную"
