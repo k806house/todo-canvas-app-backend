@@ -1,4 +1,5 @@
 function addNote(note, context) {
+    console.log(getRequest(context))
     addAction({
         type: "add_note",
         note: note
