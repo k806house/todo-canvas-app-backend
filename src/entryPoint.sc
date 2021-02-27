@@ -9,6 +9,7 @@ require: js/findItem.js
 
 # Подключение сценарных файлов
 require: scenario/addNote.sc
+require: scenario/chooseCafe.sc
 require: scenario/doNote.sc
 require: scenario/deleteNote.sc
 require: scenario/serverActions.sc

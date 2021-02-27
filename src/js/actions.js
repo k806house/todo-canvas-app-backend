@@ -13,6 +13,14 @@ function addAlarm(alarm, context) {
     }, context);
 }
 
+function chooseCafe(cafe, context) {
+    addAction({
+        type: "choose_cafe",
+        user_id: getRequest(context).rawRequest.uuid.userId,
+        cafe: cafe,
+    }, context)
+}
+
 function doneNote(id, context){
     addAction({
         type: "done_note",
