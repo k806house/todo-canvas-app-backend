@@ -5,6 +5,13 @@ function addNote(note, context) {
     }, context);
 }
 
+function addAlarm(alarm, context) {
+    addAction({
+        type: "add_alarm",
+        alarm: alarm,
+    }, context);
+}
+
 function doneNote(id, context){
     addAction({
         type: "done_note",

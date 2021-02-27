@@ -6,6 +6,6 @@ theme: /
             $AnyText::anyText
             
         script:
-            addNote($parseTree._anyText, $context);
+            addAlarm($parseTree._anyText, $context);
         
         go!: /ДобавленНовыйБудильник
