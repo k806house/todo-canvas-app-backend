@@ -1,5 +1,4 @@
 function addNote(note, context) {
-    console.log("PIPISKA");
     addAction({
         type: "add_note",
         note: note
@@ -15,13 +14,11 @@ function addAlarm(alarm, context) {
 }
 
 function chooseCafe(cafe, context) {
-    console.log(cafe);
     addAction({
         type: "choose_cafe",
         user_id: getRequest(context).rawRequest.uuid.userId,
         cafe: cafe,
     }, context);
-    console.log("kekis");
 }
 
 function doneNote(id, context){
