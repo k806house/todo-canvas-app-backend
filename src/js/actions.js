@@ -1,5 +1,4 @@
 function addNote(note, context) {
-    console.log(getRequest(context))
     addAction({
         type: "add_note",
         note: note
@@ -10,6 +9,7 @@ function addAlarm(alarm, context) {
     addAction({
         type: "add_alarm",
         alarm: alarm,
+        user_id: getRequest(context).rawRequest.uuid.userId,
     }, context);
 }
 
