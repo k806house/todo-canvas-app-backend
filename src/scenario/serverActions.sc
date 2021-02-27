@@ -31,3 +31,13 @@ theme: /
         buttons:
             "Запиши купить молоко"
             "Добавь запись помыть машину" 
+            
+    state: ДобавленНовыйБудильник
+        event!: alarm_added
+        event!: ALARM_ADDED
+
+        random: 
+            a: Океюшки!
+        
+        buttons:
+            "Поставь будильник на 7:40"
