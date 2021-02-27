@@ -43,3 +43,10 @@ theme: /
     state: Fallback
         event!: noMatch
         a: Я не понимаю.
+
+start: /
+    state:
+        q: newSession
+        newSession:
+            message = query
+            data = { user_id: $session.userId }
