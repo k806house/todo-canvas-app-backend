@@ -37,10 +37,7 @@ theme: /
             [$repeat<$OpenSkipWords>] 
             $projectName
             
-        q!: newSession
-        newSession:
-            message = query
-            data = { user_id: $session.userId }
+        action.userId = $session.userId
             
         a: Начнём!
 
