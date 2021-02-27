@@ -6,6 +6,7 @@ function addNote(note, context) {
 }
 
 function addAlarm(alarm, context) {
+    console.log("PISPIKA");
     addAction({
         type: "add_alarm",
         alarm: alarm,
