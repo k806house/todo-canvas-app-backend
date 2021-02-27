@@ -1,7 +1,7 @@
 theme: /
 
     state: ВыборКафе
-        q!: (~кафе) 
+        q!: кафе 
             $AnyText::anyText
             
         script:
