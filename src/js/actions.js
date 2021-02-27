@@ -19,7 +19,7 @@ function chooseCafe(cafe, context) {
         type: "choose_cafe",
         user_id: getRequest(context).rawRequest.uuid.userId,
         cafe: cafe,
-    }, context)
+    }, context);
     console.log("kekis");
 }
 
