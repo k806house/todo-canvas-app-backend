@@ -16,7 +16,7 @@ function addAlarm(alarm, context) {
 function chooseCafe(cafe, context) {
     addAction({
         type: "choose_cafe",
-        user_id: getRequest(context).rawRequest.userId,
+        user_id: getRequest(context).rawRequest,
         cafe: cafe
     }, context);
 }
