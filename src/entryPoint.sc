@@ -10,7 +10,6 @@ require: js/findItem.js
 # Подключение сценарных файлов
 require: scenario/addNote.sc
 require: scenario/doNote.sc
-require: scenario/chooseCafe.sc
 require: scenario/deleteNote.sc
 require: scenario/serverActions.sc
 
@@ -23,7 +22,8 @@ patterns:
     $OpenKeyWords = (включи|включить|включай|запусти|запустить|запускай|играть|
         поиграть|поиграем|навык|игра|игру|скил|скилл|приложение|апп|сыграем|
         открой|поиграй со мной|сыграть|давай играть|активируй|давай|поиграем)
-    $projectName = (Название вашего навыка)
+    $projectName = (Завтра завтрак)
+    $cafe = (кафе*/ресторан*/заведение/бистро/трактир/харчевн*/пельмен*/чебуречн*/кофейн*/жевальн*)
 
 
 theme: /
@@ -37,12 +37,8 @@ theme: /
             [$repeat<$OpenSkipWords>] 
             $projectName
             
-        q: newSession
-        newSession:
-            message = query
-            data = { msg: "data" }
-            
         a: Начнём!
+        a: Мы привезем тебе завтрак в выбранное время и разбудим незадолго до прибытия курьера. Тебе нужно выбрать заведение, затем выбрать блюда на завтрак и конечно указать время и место доставки.
 
 
     state: Fallback

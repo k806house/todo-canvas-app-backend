@@ -5,11 +5,17 @@ function addNote(note, context) {
     }, context);
 }
 
-function addAlarm(alarm, context) {
+function doneNote(id, context){
     addAction({
-        type: "add_alarm",
-        alarm: alarm,
-        user_id: getRequest(context).rawRequest.uuid.userId
+        type: "done_note",
+        id: id
+    }, context);
+}
+
+function deleteNote(id, context){
+    addAction({
+        type: "delete_note",
+        id: id
     }, context);
 }
 
@@ -21,16 +27,26 @@ function chooseCafe(cafe, context) {
     }, context);
 }
 
-function doneNote(id, context){
+function chooseFood(food, context) {
     addAction({
-        type: "done_note",
-        id: id
+        type: "choose_food",
+        user_id: getRequest(context).uuid.userId,
+        food: food
     }, context);
 }
 
-function deleteNote(id, context){
+function checkout(order, context) {
     addAction({
-        type: "delete_note",
+        type: "checkout",
+        user_id: getRequest(context).uuid.userId,
+        order: order
+    }, context);
+}
+
+
+function cancel(id, context) {
+    addAction({
+        type: "cancel",
         id: id
     }, context);
 }
