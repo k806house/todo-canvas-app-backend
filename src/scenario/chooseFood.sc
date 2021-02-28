@@ -4,7 +4,7 @@ theme: /
 
     	state: ВыборКафе
         	q!:  хочу в 
-                 $AnyText::anyText}
+                 $AnyText::anyText
             
         	script:
             	chooseCafe($parseTree._anyText, $context);
