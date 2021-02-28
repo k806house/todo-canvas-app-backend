@@ -11,7 +11,7 @@ theme: /
 
         random: 
             a: Молодец!
-            a: Красавичк!
+            a: Красавичка!
             a: Супер
 
         buttons:
@@ -31,7 +31,17 @@ theme: /
         buttons:
             "Запиши купить молоко"
             "Добавь запись помыть машину" 
+            
+    state: ДобавленНовыйБудильник
+        event!: alarm_added
+        event!: ALARM_ADDED
 
+        random: 
+            a: Океюшки!
+        
+        buttons:
+            "Поставь будильник на 7:40"
+            
     state: ВыбраноКафе
         event!: cafe_chosen
         event!: CAFE_CHOSEN
@@ -43,33 +53,3 @@ theme: /
         
         buttons:
             "Хочу чебуречную"
-
-    state: ВыбраноБлюдо
-        event!: food_chosen
-        event!: FOOD_CHOSEN
-
-        random: 
-            a: Океюшки!
-            a: Заебись!
-            a: Понял, братишка!
-        
-        buttons:
-            "Хочу чебурек"   
-
-    state: ЗаказОформлен
-        event!: checkout
-        event!: CHECKOUT
-
-        random: 
-            a: Океюшки!
-            a: Заебись!
-            a: Понял, братишка!
-        
-        buttons:
-            "Оформить"  
-
-    state: Отменяем
-        event!: cancel
-        event!: CANCEL
-        random:
-            a: Отменяю
