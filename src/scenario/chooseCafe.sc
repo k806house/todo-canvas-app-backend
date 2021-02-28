@@ -1,12 +1,7 @@
 theme: /
 
     state: ВыборКафе
-        q!: {[(выбир*/выбр*) $cafe]
-        		 [хочу (в/из/с) $cafe]
-        	 	 [го в $cafe]
-        	 	 [* давай в $cafe]
-        	     [* закажи (в/из/с) $cafe]
-        	     [$cafe]
+        q!: хочу в кафе
             $AnyText::anyText
             
         script:
