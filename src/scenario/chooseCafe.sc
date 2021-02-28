@@ -1,7 +1,7 @@
 theme: /
 
     state: ВыборКафе
-        q!: выбираю кафе 
+        q!: хочу в кафе
             $AnyText::anyText
             
         script:
