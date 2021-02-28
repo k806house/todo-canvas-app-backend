@@ -11,9 +11,6 @@ require: js/findItem.js
 require: scenario/addNote.sc
 require: scenario/doNote.sc
 require: scenario/chooseCafe.sc
-require: scenario/chooseFood.sc
-require: scenario/order.sc
-require: scenario/cancel.sc
 require: scenario/deleteNote.sc
 require: scenario/serverActions.sc
 
